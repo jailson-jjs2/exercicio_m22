@@ -26,7 +26,7 @@ const contTime = setInterval(function() {/* EXECUTANDO A CADA SEG. */
 
   if (tempoAteEvento < 0) {
     clearInterval(contTime);
-    document.getElementById('contador').innerHTML = 'Evento expirado!!';
+    document.getElementById('contador').innerHTML = 'Perdeu a Festa :P';
   }
 
 },1000);
