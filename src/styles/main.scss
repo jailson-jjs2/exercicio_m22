@@ -1,0 +1,29 @@
+@use 'hero';
+@use 'components/infos_bar';
+@use 'components/btn';
+@use 'event';
+@use 'variables';
+
+* { /* RESET */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kaushan Script', cursive;
+  color: variables.$priTextColor;
+  list-style: none;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 640px) { /* CELULAR */
+    max-width: 80%;
+  }
+
+  @media (max-width: 1024px) {/* TABLET */
+    max-width: 90%;
+    padding-left: 0cap;
+  }
+}
